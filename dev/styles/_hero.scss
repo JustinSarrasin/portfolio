@@ -14,15 +14,32 @@
          li {
             list-style-type: none;
             margin-top: 18px;
+            &:hover {
+               // color: white;
+               transform: scale(1.1);
+            }
             a {
-                  color: #b2b2b2;
-                  text-decoration: none;
-                  padding: 0;
-                  margin-right: 25px;
+               color: #b2b2b2;
+               text-decoration: none;
+               padding: 20px 0;
+               margin-right: 25px;
+               &:hover {
+                  color: white;
+                  }
             }
          } 
    }
 }
+
+// .topHeader  a:hover {
+//    color: white;
+//    transform: scale(1.1);
+// }
+
+// .topHeader  li:hover {
+//    color: white;
+//    transform: scale(1.1);
+// }
 
 .topHeader {
    color: #b2b2b2;
@@ -39,4 +56,24 @@
    text-align: center;
    align-items: center;
    justify-content: center;
+}
+
+.heroLinks{
+   margin-top: 50px;
+   a {
+      text-decoration: none;
+      font-size: 14px;
+      border: 1px solid white;
+      border-radius: 25px;
+      color: white;
+      padding: 10px 25px;
+      &:hover {
+         background-color: white;
+         color: black;
+         transform: scale(2);
+         // &:active {
+
+         // }
+      }
+   }
 }

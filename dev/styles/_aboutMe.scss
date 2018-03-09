@@ -11,14 +11,33 @@
 }
 
 .headshot {
-   width: 65%;
-   height: 65%;
-   padding: 25px 0 0;
+   height: 25%;
+   width: 50%;
+   padding-right: 50px;
+   // justify-content: flex-end;
+   // padding: 25px 0 0;
    // display: inline-block;
    // background-color: black;
 }
 
 .aboutMeDesc {
-   width: 50%;
+   // width: 50%;
    // background: orange;
+}
+
+.seePortfolio {
+   margin-top: 60px;
+   
+   a{
+      border: 1px solid #444444;
+      border-radius: 25px;
+      padding: 10px 25px;
+      font-size: 14px;
+      color: #444444;
+      text-decoration: none;
+      &:hover {
+         background-color: #444444;
+         color: white;
+      }
+   }
 }

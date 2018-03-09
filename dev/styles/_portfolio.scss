@@ -10,12 +10,37 @@
 
 .portfolio {
    width: 50%;
-   height: 400px;
-   background-color: orange;
+   // height: 400px;
+   // background-color: orange;
    // display:flex;
    // align-items: center;
+   // h3 {
+   //    color: #444444;
+      // display: inline-block;
+      // border-bottom: 2px solid black;
+   
+   p {
+      color: #999999;
+      // display: inline-block;
+      // border-bottom: 2px solid black;
+   }
+   h6 {
+      color: #999999;
+      
+   }
 }
 
-.portfolioDesc {
-   background-color: plum;
+.portfolioDesc2 {
+   // text-align: right;
+}
+
+.viewLive {
+   margin-top: 75px;
+   a {
+   color: #777777;
+   padding: 4px 10px;
+   margin-top: 100px;
+   text-decoration: none;
+   border: 2px solid #eeeeee;
+   }
 }

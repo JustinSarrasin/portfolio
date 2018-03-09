@@ -143,12 +143,17 @@ h1 {
   font-size: 64px; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 36px;
+  color: #444444; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 24px;
+  color: #444444; }
 
 h4 {
+  font-size: 22px; }
+
+h5 {
   font-size: 17px; }
 
 .hero {
@@ -166,11 +171,15 @@ h4 {
     .topHeader nav li {
       list-style-type: none;
       margin-top: 18px; }
+      .topHeader nav li:hover {
+        transform: scale(1.1); }
       .topHeader nav li a {
         color: #b2b2b2;
         text-decoration: none;
-        padding: 0;
+        padding: 20px 0;
         margin-right: 25px; }
+        .topHeader nav li a:hover {
+          color: white; }
 
 .topHeader {
   color: #b2b2b2; }
@@ -186,6 +195,20 @@ h4 {
   align-items: center;
   justify-content: center; }
 
+.heroLinks {
+  margin-top: 50px; }
+  .heroLinks a {
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px; }
+    .heroLinks a:hover {
+      background-color: white;
+      color: black;
+      transform: scale(2); }
+
 .aboutMeContainer {
   display: flex;
   padding: 25px 0; }
@@ -194,12 +217,22 @@ h4 {
   width: 50%; }
 
 .headshot {
-  width: 65%;
-  height: 65%;
-  padding: 25px 0 0; }
+  height: 25%;
+  width: 50%;
+  padding-right: 50px; }
 
-.aboutMeDesc {
-  width: 50%; }
+.seePortfolio {
+  margin-top: 60px; }
+  .seePortfolio a {
+    border: 1px solid #444444;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #444444;
+    text-decoration: none; }
+    .seePortfolio a:hover {
+      background-color: #444444;
+      color: white; }
 
 .skills {
   background-color: #f9f9f9;
@@ -223,6 +256,31 @@ ul.skillsBottom {
   justify-content: space-around;
   padding: 30px 0 75px; }
 
+.devicon-html5-plain:hover {
+  color: #d45632; }
+
+.devicon-css3-plain:hover {
+  color: #3371b1; }
+
+.devicon-sass-original:hover {
+  color: #c26a98; }
+
+.devicon-javascript-plain:hover {
+  background-color: black;
+  color: #f4df51; }
+
+.devicon-jquery-plain:hover {
+  color: #2d69a9; }
+
+.devicon-gulp-plain:hover {
+  color: #c4534d; }
+
+.devicon-react-original:hover {
+  color: #80d8f7; }
+
+.devicon-visualstudio-plain:hover {
+  color: #307ac6; }
+
 .examples h2 {
   text-align: center;
   margin: 75px 0; }
@@ -232,12 +290,20 @@ ul.skillsBottom {
   flex-wrap: wrap; }
 
 .portfolio {
-  width: 50%;
-  height: 400px;
-  background-color: orange; }
+  width: 50%; }
+  .portfolio p {
+    color: #999999; }
+  .portfolio h6 {
+    color: #999999; }
 
-.portfolioDesc {
-  background-color: plum; }
+.viewLive {
+  margin-top: 75px; }
+  .viewLive a {
+    color: #777777;
+    padding: 4px 10px;
+    margin-top: 100px;
+    text-decoration: none;
+    border: 2px solid #eeeeee; }
 
 .projectContainer {
   display: flex;
@@ -293,6 +359,7 @@ textarea {
   text-align: center;
   align-self: center;
   padding: 5px 25px;
+  border-radius: 25px;
   color: #ffffff;
   margin-top: 20px; }
 
@@ -322,6 +389,12 @@ footer {
     .footerContainer ul li a {
       color: #bbbbbb;
       text-decoration: none; }
+
+.submitEmail {
+  padding: 10px 25px; }
+  .submitEmail:hover {
+    background-color: white;
+    color: #444444; }
 
 .upArrow {
   text-align: center; }
