@@ -1,0 +1,59 @@
+.contactMe {
+   background-color: #232323;
+   color: #bbbbbb;
+}
+
+.contactContainer h2 {
+   padding: 75px 0;
+   text-align: center;
+
+}
+
+.emailForm{
+   padding-bottom: 75px;
+   display: flex;
+   flex-direction: column;
+   div {
+      display: flex;
+      justify-content: space-between;
+      input {
+         width: 49.5%;
+      }
+   }
+}
+
+input,
+textarea {
+   background-color: #2e2e2e;
+   padding: 15px 0;
+   
+   // background-color: #2e2e2e;
+   border: none;
+   border-radius: 10px;
+   margin-top: 10px; 
+   
+}
+
+textarea::placeholder,
+input::placeholder {
+      padding-left: 15px;
+      // margin: 10px;
+   }  
+
+
+
+.subject {
+   width: 100%;
+}
+
+textarea {
+   width: 100%;
+}
+
+.submitEmail {
+   text-align: center;
+   align-self: center;
+   padding: 5px 25px;
+   color: #ffffff;
+   margin-top: 20px;
+}

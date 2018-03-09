@@ -1,0 +1,42 @@
+.hero {
+   background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)),url('./../../assets/tobias-van-schneider-230170-unsplash.jpg');
+   background-size: cover;
+   height: 100vh;
+   color: white;
+   margin-bottom: 75px;
+}
+
+.topHeader {
+   display: flex;
+   justify-content: space-between;
+      nav {
+         display: flex;
+         li {
+            list-style-type: none;
+            margin-top: 18px;
+            a {
+                  color: #b2b2b2;
+                  text-decoration: none;
+                  padding: 0;
+                  margin-right: 25px;
+            }
+         } 
+   }
+}
+
+.topHeader {
+   color: #b2b2b2;
+   span {
+      color: #ffffff;
+   }
+}
+      
+.nameContainer {
+   border-top: 1px solid #bbbbbb;
+   display: flex;
+   height: 100vh;   
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}

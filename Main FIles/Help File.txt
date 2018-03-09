@@ -1,0 +1,51 @@
+First of all I would like to thank you for your purchase! You are the best!
+
+
+/* Folder structure:
+============================ */
+
+/* biodata
+------------------------------- */
+
+	Main folder of the biodata - clean personal PSD template. You can find here 3 PSD files (home page, portfolio detail & blog detail page) also all files are layer PSD.
+
+
+/* documentation
+------------------------------- */
+
+	biodata - clean personal PSD template documentation is also available. To view it, navigate to the documentation folder and double click index.html file. You can learn more about biodata PSD template from the documentation.
+
+/* Main Features
+---------------------------------------------------------- */
+
+- All files are layerd PSD
+- 3 PSD files included
+- 1920px width with 1170px bootstrap container.
+- Bootstrap 12 columns with guide line.
+- Portfolio details page included
+- Blog details page included
+- 24/7 first support
+
+
+/* Creadits
+---------------------------------------------------------- */
+
+Fonts:
+
+- http://fontawesome.io/ (Font Awesome)
+- https://www.fontsquirrel.com/fonts/poppins (Poppins)
+- https://www.fontsquirrel.com/fonts/roboto (Roboto)
+
+Images:
+
+- https://unsplash.com/ (Unsplash)
+- https://pixabay.com/ (Pixabay)
+
+/* Supports
+---------------------------------------------------------- */
+
+Dear Sir, If you face installation and customization related problem. so, feel free to contact with us.
+
+Email: mycodrops@gmail.com
+
+Good Luck!

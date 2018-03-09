@@ -1,0 +1,27 @@
+$headerFont: 'Poppins', sans-serif;
+$bodyFont: 'Roboto', sans-serif;
+
+body {
+   font-family: $bodyFont;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   font-family: $headerFont;
+}
+
+h1 {
+   font-size: 64px;
+}
+
+h2 {
+   font-size: 36px;
+}
+
+h3 {
+   font-size: 24px;
+}
+
+h4 {
+   font-size: 17px;
+}

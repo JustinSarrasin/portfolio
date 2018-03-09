@@ -1,0 +1,21 @@
+.examples h2 {
+   text-align: center;
+   margin: 75px 0;
+}
+
+.portfolioContainer {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.portfolio {
+   width: 50%;
+   height: 400px;
+   background-color: orange;
+   // display:flex;
+   // align-items: center;
+}
+
+.portfolioDesc {
+   background-color: plum;
+}

@@ -1,0 +1,24 @@
+.aboutMeContainer {
+   display: flex;
+   padding: 25px 0;
+   // margin-bottom: 75px;
+}
+
+.aboutMe {
+   width: 50%;
+   // background: green;
+   // height: 200px;
+}
+
+.headshot {
+   width: 65%;
+   height: 65%;
+   padding: 25px 0 0;
+   // display: inline-block;
+   // background-color: black;
+}
+
+.aboutMeDesc {
+   width: 50%;
+   // background: orange;
+}

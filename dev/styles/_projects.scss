@@ -1,0 +1,15 @@
+.projectContainer {
+   display: flex;
+   flex-wrap: wrap;
+}
+.project {
+   width: 25%;
+   height: 300px;
+   background-color: yellow;
+   display:flex;
+   align-items: center;
+}
+
+.projectDesc {
+   background-color: red;
+}

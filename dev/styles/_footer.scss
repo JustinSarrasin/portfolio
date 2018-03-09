@@ -1,0 +1,40 @@
+footer {
+   background-color: #232323;
+   color: #bbbbbb;
+   border-top: 1px solid #bbbbbb;
+} 
+
+.footerContainer div {
+   width: 33%;
+   padding: 20px 0;
+}
+
+.footerContainer {
+   display: flex;
+   justify-content: space-between;
+   p {
+      margin: 0;
+      padding: 0;
+   }
+}
+
+.footerContainer {
+   ul {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 40px;
+      li {
+         list-style-type: none;
+         // margin-left: 50px;
+         a {
+            color: #bbbbbb;
+            text-decoration: none;
+         }
+      }
+   }
+}
+
+.upArrow {
+   text-align: center;
+}
