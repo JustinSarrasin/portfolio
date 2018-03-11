@@ -1,15 +1,35 @@
+.examples {
+   padding: 75px 0 0;
+}
+
 .examples h2 {
    text-align: center;
-   margin: 75px 0;
+   margin: 0 0 50px;
+   &::after {
+   content: "";
+   // display: flex;
+   display: block;
+   height: 1.5px;
+   width: 100px;
+   // position: absolute;
+   background: #444444;
+   // top: 0%;
+   margin: 0 auto;
+   margin-top: 30px;
+   // right: 31%;
+   }
 }
 
 .portfolioContainer {
    display: flex;
    flex-wrap: wrap;
+   justify-content: space-between;
 }
 
 .portfolio {
-   width: 50%;
+   // justify-content: space-between;
+   width: 48%;
+   margin-bottom: 45px;
    // height: 400px;
    // background-color: orange;
    // display:flex;
@@ -24,14 +44,33 @@
       // display: inline-block;
       // border-bottom: 2px solid black;
    }
-   h6 {
+   h5 {
       color: #999999;
       
    }
 }
 
+// .portfolio p::after {
+//    content: "";
+//    // display: flex;
+//    display: block;
+//    height: 1.5px;
+//    width: 75%;
+//    // position: absolute;
+//    background: #999999;
+//    // top: 0%;
+//    margin: 30px 0 20px;
+//    // margin-top: 30px;
+// }
+
 .portfolioDesc2 {
    // text-align: right;
+}
+
+// .emailForm input, .emailForm textarea{
+.formText{
+   color: white;
+   padding-left: 6px;
 }
 
 .viewLive {
@@ -39,8 +78,17 @@
    a {
    color: #777777;
    padding: 4px 10px;
-   margin-top: 100px;
+   margin-top: 75px;
    text-decoration: none;
    border: 2px solid #eeeeee;
+   &:hover {
+
+      background-color: #444444;
+         color: white;
+   }
    }
 }
+
+// form {
+//    color: white;
+// }

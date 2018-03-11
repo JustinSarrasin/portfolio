@@ -159,9 +159,11 @@ h5 {
 .hero {
   background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)), url("./../../assets/tobias-van-schneider-230170-unsplash.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
-  color: white;
-  margin-bottom: 75px; }
+  max-width: 100%;
+  background-position: center;
+  color: white; }
 
 .topHeader {
   display: flex;
@@ -170,14 +172,15 @@ h5 {
     display: flex; }
     .topHeader nav li {
       list-style-type: none;
-      margin-top: 18px; }
+      margin-top: 18px;
+      transition: .5s; }
       .topHeader nav li:hover {
         transform: scale(1.1); }
       .topHeader nav li a {
         color: #b2b2b2;
         text-decoration: none;
         padding: 20px 0;
-        margin-right: 25px; }
+        margin-left: 25px; }
         .topHeader nav li a:hover {
           color: white; }
 
@@ -211,7 +214,7 @@ h5 {
 
 .aboutMeContainer {
   display: flex;
-  padding: 25px 0; }
+  padding: 100px 0 0; }
 
 .aboutMe {
   width: 50%; }
@@ -219,7 +222,25 @@ h5 {
 .headshot {
   height: 25%;
   width: 50%;
-  padding-right: 50px; }
+  padding-right: 50px;
+  padding-bottom: 50px;
+  position: relative; }
+
+.headshotBorder::after {
+  z-index: -2;
+  width: 88%;
+  height: 88%;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  bottom: 0;
+  left: 15px;
+  border: solid 4px #444444; }
+
+.aboutMeDesc {
+  color: #777777; }
 
 .seePortfolio {
   margin-top: 60px; }
@@ -236,11 +257,19 @@ h5 {
 
 .skills {
   background-color: #f9f9f9;
-  padding-top: 20px;
+  padding-top: 75px;
   margin-top: 75px; }
   .skills h2 {
     text-align: center;
-    margin: 75px 0; }
+    margin-bottom: 50px; }
+    .skills h2::after {
+      content: "";
+      display: block;
+      height: 1.5px;
+      width: 100px;
+      background: #444444;
+      margin: 0 auto;
+      margin-top: 30px; }
 
 .skills ul {
   display: flex;
@@ -281,29 +310,49 @@ ul.skillsBottom {
 .devicon-visualstudio-plain:hover {
   color: #307ac6; }
 
+.examples {
+  padding: 75px 0 0; }
+
 .examples h2 {
   text-align: center;
-  margin: 75px 0; }
+  margin: 0 0 50px; }
+  .examples h2::after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 100px;
+    background: #444444;
+    margin: 0 auto;
+    margin-top: 30px; }
 
 .portfolioContainer {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .portfolio {
-  width: 50%; }
+  width: 48%;
+  margin-bottom: 45px; }
   .portfolio p {
     color: #999999; }
-  .portfolio h6 {
+  .portfolio h5 {
     color: #999999; }
+
+.formText {
+  color: white;
+  padding-left: 6px; }
 
 .viewLive {
   margin-top: 75px; }
   .viewLive a {
     color: #777777;
     padding: 4px 10px;
-    margin-top: 100px;
+    margin-top: 75px;
     text-decoration: none;
     border: 2px solid #eeeeee; }
+    .viewLive a:hover {
+      background-color: #444444;
+      color: white; }
 
 .projectContainer {
   display: flex;
@@ -324,8 +373,17 @@ ul.skillsBottom {
   color: #bbbbbb; }
 
 .contactContainer h2 {
-  padding: 75px 0;
-  text-align: center; }
+  padding: 75px 0 50px;
+  text-align: center;
+  color: #bbbbbb; }
+  .contactContainer h2::after {
+    content: "";
+    display: block;
+    height: 1.5px;
+    width: 100px;
+    background: #444444;
+    margin: 0 auto;
+    margin-top: 30px; }
 
 .emailForm {
   padding-bottom: 75px;
@@ -398,6 +456,8 @@ footer {
 
 .upArrow {
   text-align: center; }
+  .upArrow a {
+    color: #bbbbbb; }
 
 .wrapper {
   max-width: 1000px;
@@ -405,3 +465,6 @@ footer {
 
 img {
   max-width: 100%; }
+
+a, a:active, a:focus {
+  outline: none; }
