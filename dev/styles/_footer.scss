@@ -26,10 +26,18 @@ footer {
       padding-left: 40px;
       li {
          list-style-type: none;
+         transition: 1s;
+         &:hover {
+            transform: scale(1.1);
+         }
+         
          // margin-left: 50px;
          a {
             color: #bbbbbb;
             text-decoration: none;
+            &:hover {
+               color: white;
+            }
          }
       }
    }
@@ -38,9 +46,9 @@ footer {
 .submitEmail {
    padding: 10px 25px;
    &:hover {
-               background-color: white;
-               color: #444444;
-            }
+      background-color: white;
+      color: #444444;
+      }
 }
 
 .upArrow {

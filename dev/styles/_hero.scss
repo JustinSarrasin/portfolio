@@ -7,6 +7,9 @@
    max-width: 100%;
    background-position: center;
    color: white;
+   a {
+      text-decoration: none;
+   }
    // margin-bottom: 75px;
 }
 
@@ -28,6 +31,7 @@
                text-decoration: none;
                padding: 20px 0;
                margin-left: 25px;
+               transition: 1s;
                &:hover {
                   color: white;
                   }
