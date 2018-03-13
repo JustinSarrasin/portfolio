@@ -40,6 +40,22 @@
    }
 }
 
+@media (max-width: 600px) {
+   .topHeader {
+      flex-direction: column;
+      padding: 5px 0 0;
+      // justify-content: center;
+      text-align: center;
+   }
+
+   .topNavRight {
+      justify-content: center;
+      margin-left: -25px;
+      margin-top: -15px;
+      padding-bottom: 10px;
+   }
+}
+
 // .topHeader  a:hover {
 //    color: white;
 //    transform: scale(1.1);

@@ -9,18 +9,18 @@
    text-align: center;
    margin: 0 0 50px;
    &::after {
-   content: "";
-   // display: flex;
-   display: block;
-   height: 1.5px;
-   width: 100px;
-   // position: absolute;
-   background: #444444;
-   // top: 0%;
-   margin: 0 auto;
-   margin-top: 30px;
-   // right: 31%;
-   }
+      content: "";
+      // display: flex;
+      display: block;
+      height: 1.5px;
+      width: 100px;
+      // position: absolute;
+      background: #444444;
+      // top: 0%;
+      margin: 0 auto;
+      margin-top: 30px;
+      // right: 31%;
+      }
 }
 
 .portfolioContainer {
@@ -31,10 +31,20 @@
    
 }
 
+.portfolioExample {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
 .portfolio {
    // justify-content: space-between;
-   width: 48%;
+   width: 49%;
+   // justify-content: space-between;
    margin-bottom: 45px;
+   
    // height: 400px;
    // background-color: orange;
    // display:flex;
@@ -55,6 +65,32 @@
    }
 }
 
+@media (max-width: 700px) {
+   .examples {
+      h5, h3 {
+         text-align: center;
+      }
+   }
+   .portfolio {
+      width: 100%;
+      order: 2;
+   }
+   
+   .portfolioDesc2, .portfolioDesc {
+      order: 1;
+      // text-align: right;
+   }
+
+   div.viewLive {
+      display: flex;
+      margin-top: 0;
+      justify-content: center;
+      a {
+         margin-top: 0;
+      }
+   }
+}
+
 // .portfolio p::after {
 //    content: "";
 //    // display: flex;
@@ -68,9 +104,7 @@
 //    // margin-top: 30px;
 // }
 
-.portfolioDesc2 {
-   // text-align: right;
-}
+
 
 // .emailForm input, .emailForm textarea{
 .formText{

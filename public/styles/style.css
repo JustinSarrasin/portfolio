@@ -187,6 +187,17 @@ h5 {
         .topHeader nav li a:hover {
           color: white; }
 
+@media (max-width: 600px) {
+  .topHeader {
+    flex-direction: column;
+    padding: 5px 0 0;
+    text-align: center; }
+  .topNavRight {
+    justify-content: center;
+    margin-left: -25px;
+    margin-top: -15px;
+    padding-bottom: 10px; } }
+
 .topHeader {
   color: #b2b2b2; }
   .topHeader span {
@@ -237,6 +248,25 @@ h5 {
   position: relative;
   z-index: 999; }
 
+@media (max-width: 540px) {
+  .headshot {
+    display: none; }
+  .aboutMe {
+    margin-top: -25px;
+    width: 100%;
+    text-align: center; }
+    .aboutMe h2::after {
+      content: "";
+      display: block;
+      height: 1.5px;
+      width: 100px;
+      background: #444444;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+    .aboutMe p {
+      text-align: left; } }
+
 @media (max-width: 1062) {
   .headshotBorder {
     display: none; } }
@@ -258,12 +288,12 @@ h5 {
       background-color: #444444;
       color: white; }
 
-@media (max-width: 1062px) {
+@media (max-width: 1151px) {
   .about {
     background-color: #f9f9f9;
     padding-bottom: 0px; } }
 
-@media (min-width: 1061px) {
+@media (min-width: 1152px) {
   .skills {
     display: none;
     background-color: #444444; }
@@ -276,10 +306,6 @@ h5 {
         width: 100px;
         background: #444444;
         margin: 0 auto; } }
-
-@media (max-width: 1061) {
-  section.skills {
-    background-color: red; } }
 
 .skills {
   background: #f9f9f9; }
@@ -294,6 +320,8 @@ h5 {
     .skills ul li i {
       font-size: 40px;
       padding: 10px;
+      color: #777777; }
+    .skills ul li p {
       color: #777777; }
 
 ul.skillsBottom {
@@ -324,6 +352,10 @@ ul.skillsBottom {
 .devicon-visualstudio-plain:hover {
   color: #307ac6; }
 
+@media (max-width: 480px) {
+  .skills i {
+    font-size: 40px; } }
+
 .skills2 {
   padding-top: 15px;
   margin-top: 15px; }
@@ -340,7 +372,7 @@ ul.skillsBottom {
       margin: 0 auto;
       margin-top: 30px; }
 
-@media (max-width: 1060px) {
+@media (max-width: 1151px) {
   .skills2 {
     display: none; } }
 
@@ -403,13 +435,35 @@ ul.skillsBottom2 {
   flex-wrap: wrap;
   justify-content: space-between; }
 
+.portfolioExample {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+
 .portfolio {
-  width: 48%;
+  width: 49%;
   margin-bottom: 45px; }
   .portfolio p {
     color: #999999; }
   .portfolio h5 {
     color: #999999; }
+
+@media (max-width: 700px) {
+  .examples h5, .examples h3 {
+    text-align: center; }
+  .portfolio {
+    width: 100%;
+    order: 2; }
+  .portfolioDesc2, .portfolioDesc {
+    order: 1; }
+  div.viewLive {
+    display: flex;
+    margin-top: 0;
+    justify-content: center; }
+    div.viewLive a {
+      margin-top: 0; } }
 
 .formText {
   color: white;
@@ -536,6 +590,12 @@ footer {
   text-align: center; }
   .upArrow a {
     color: #bbbbbb; }
+
+@media (max-width: 960px) {
+  .footerContainer ul {
+    flex-direction: column;
+    text-align: right;
+    flex-direction: flex-end; } }
 
 .wrapper {
   max-width: 1100px;

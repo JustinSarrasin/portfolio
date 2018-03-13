@@ -66,3 +66,18 @@ footer {
    // color: #bbbbbb;
    
 }
+
+@media (max-width: 960px){
+   // footer {
+   //    font-size: 14px;
+   // }
+   .name, .footerSocials {
+      // flex-grow: 3;
+   }
+   .footerContainer ul  {
+      // display: flex;
+      flex-direction: column;
+      text-align: right;
+      flex-direction: flex-end;
+   }
+}
