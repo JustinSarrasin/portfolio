@@ -11,6 +11,7 @@ footer {
 
 .footerContainer {
    display: flex;
+   padding: 10px 0;
    justify-content: space-between;
    p {
       margin: 0;
@@ -26,13 +27,11 @@ footer {
       padding-left: 40px;
       li {
          list-style-type: none;
-         transition: 1s;
          &:hover {
-            transform: scale(1.1);
+            // transform: scale(1.1);
          }
-         
-         // margin-left: 50px;
          a {
+            transition: 1s;
             color: #bbbbbb;
             text-decoration: none;
             &:hover {
@@ -43,53 +42,71 @@ footer {
    }
 }
 
-.submitEmail {
-   padding: 10px 25px;
-   &:hover {
-      background-color: white;
-      color: #444444;
-      }
-}
-
 .upArrow {
    text-align: center;
    a{
-
+      border: 1px solid #f9f9f9;
+      padding: 8px 10px;
+      border-radius: 50%;
       color: #bbbbbb;
+      // transition: 1s;      
+      
+      &:hover {
+         color:#2e2e2e;
+         background-color: #f9f9f9; 
+      }
    }
 }
 
-.fa-chevron-up {
-   // border: 1px solid #bbbbbb;
-   // border-radius: 50%;
-   // padding: 20px;
-   // color: #bbbbbb;
-   
+.email {
+   text-align: left;
+   padding-bottom: 40px;
+   a {
+      color: #bbbbbb;
+      text-decoration: none;
+      font-size: 18px;
+      &:hover {
+         color: white;
+         transition: 1s;
+      }
+   }
 }
 
 @media (max-width: 960px){
-   // footer {
-   //    font-size: 14px;
-   // }
    .name, .footerSocials {
-      // flex-grow: 3;
    }
    .footerContainer ul  {
-      // display: flex;
-      // flex-direction: column;
+      padding: 0;
       text-align: right;
       flex-direction: flex-end;
-      li {
-         // width: 33%;s
-      }
-      span {
+      i {
          display: none;
       }
    }
 }
 
-@media (max-width: 375px) {
-   .footerContainer ul {
+@media (max-width: 765px) {
+   .email {
+      text-align: center;
+   }
+   .footerContainer  {
       flex-direction: column;
+      padding-top: 3px;
+      div {
+         width: 100%;
+         margin: -5px 0;
+         p {
+            text-align: center;
+         }
+      }
+   }
+
+   .footerSocials ul {
+      justify-content: space-around;
+   }
+
+   div.upArrow {
+      order: 1;
+      margin-bottom: 10px;
    }
 }

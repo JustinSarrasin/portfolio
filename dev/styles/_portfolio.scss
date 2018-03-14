@@ -1,8 +1,5 @@
 .examples {
    padding: 75px 0 0;
-   // border-top: 1px solid black;
-   // background-color: #f9f9f9;
-   
 }
 
 .examples h2 {
@@ -10,16 +7,12 @@
    margin: 0 0 50px;
    &::after {
       content: "";
-      // display: flex;
       display: block;
       height: 1.5px;
       width: 100px;
-      // position: absolute;
       background: #444444;
-      // top: 0%;
       margin: 0 auto;
       margin-top: 30px;
-      // right: 31%;
       }
 }
 
@@ -27,8 +20,6 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   // margin-bottom: 20px;
-   // background-color: #f9f9f9;
 }
 
 .portfolioExample {
@@ -40,34 +31,41 @@
 }
 
 .portfolio {
-   // justify-content: space-between;
    width: 49%;
-   // justify-content: space-between;
-   margin-bottom: 45px;
-   
-   // height: 400px;
-   // background-color: orange;
-   // display:flex;
-   // align-items: center;
-   // h3 {
-   //    color: #444444;
-      // display: inline-block;
-      // border-bottom: 2px solid black;
-   
+   margin-bottom: 45px;   
    p {
       color: #999999;
       font-size: 18px;
-      // display: inline-block;
-      // border-bottom: 2px solid black;
    }
    h5 {
       color: #999999;
-      
    }
 }
 
 .portfolioDesc {
    padding-top: 20px;
+}
+
+.formText{
+   color: white;
+   padding-left: 6px;
+}
+
+.viewLive {
+   margin-top: 40px;
+   a {
+   color: #777777;
+   padding: 4px 10px;
+   border-radius: 25px;
+   padding: 10px 25px;
+   margin-top: 75px;
+   text-decoration: none;
+   border: 2px solid #eeeeee;
+   &:hover {
+      background-color: #444444;
+         color: white;
+      }
+   }
 }
 
 @media (max-width: 700px) {
@@ -83,59 +81,5 @@
    
    .portfolioDesc2, .portfolioDesc {
       order: 2;
-      // text-align: right;
-   }
-
-   div.viewLive {
-      display: flex;
-      margin-top: 0;
-      justify-content: center;
-      a {
-         margin-top: 0;
-      }
    }
 }
-
-// .portfolio p::after {
-//    content: "";
-//    // display: flex;
-//    display: block;
-//    height: 1.5px;
-//    width: 75%;
-//    // position: absolute;
-//    background: #999999;
-//    // top: 0%;
-//    margin: 30px 0 20px;
-//    // margin-top: 30px;
-// }
-
-
-
-// .emailForm input, .emailForm textarea{
-.formText{
-   color: white;
-   padding-left: 6px;
-}
-
-.viewLive {
-   margin-top: 40px;
-   a {
-   color: #777777;
-   padding: 4px 10px;
-   border-radius: 25px;
-   // color: white;
-   padding: 10px 25px;
-   margin-top: 75px;
-   text-decoration: none;
-   border: 2px solid #eeeeee;
-   &:hover {
-
-      background-color: #444444;
-         color: white;
-   }
-   }
-}
-
-// form {
-//    color: white;
-// }

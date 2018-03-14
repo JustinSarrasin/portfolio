@@ -9,22 +9,16 @@
    color: #bbbbbb;
    &::after {
    content: "";
-   // display: flex;
    display: block;
    height: 1.5px;
    width: 100px;
-   // position: absolute;
    background: #444444;
-   // top: 0%;
    margin: 0 auto;
    margin-top: 30px;
-   // right: 31%;
    }
-
 }
 
 .emailForm{
-   // padding-bottom: 75px;
    display: flex;
    flex-direction: column;
    div {
@@ -34,6 +28,14 @@
          width: 49.5%;
       }
    }
+}
+
+.submitEmail {
+   padding: 10px 25px;
+   &:hover {
+      background-color: white;
+      color: #444444;
+      }
 }
 
 
@@ -48,21 +50,16 @@ input,
 textarea {
    background-color: #2e2e2e;
    padding: 15px 0;
-   
-   // background-color: #2e2e2e;
    border: none;
-   // border-radius: 10px;
    margin-top: 10px; 
    
 }
 
 textarea::placeholder,
 input::placeholder {
-      padding-left: 15px;
-      // margin: 10px;
+   padding-left: 15px;
+   // margin: 10px;
    }  
-
-
 
 .subject {
    width: 100%;
@@ -75,26 +72,10 @@ textarea {
 .submitEmail {
    text-align: center;
    align-self: center;
-   // padding: 5px 25px;
    padding: 10px 25px;
    border-radius: 25px;
    color: #ffffff;
    margin: 20px 0;
 }
 
-.email {
-   // margin: 0 auto;
-   text-align: center;
-   padding-bottom: 40px;
-   a {
-      color: #bbbbbb;
-      text-decoration: none;
-      font-size: 18px;
-      transform: scale(1.1);
-      &:hover {
-         color: white;
-         transition: 1s;
-      }
 
-   }
-}

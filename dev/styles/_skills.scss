@@ -1,105 +1,47 @@
+.skills {
+   background: #f9f9f9;
+}
 
+.skills ul {
+   display: flex;
+   justify-content: space-between;
+   padding: 0;
+   li {
+      list-style-type: none;
+      text-align: center;
+      i {
+         font-size: 40px;
+         padding: 10px;
+         color: #777777;
+      } p {
+         color: #777777;
+      }
+   }
+}
+      
+ul.skillsBottom  {
+   justify-content: space-around;
+   padding: 30px 0 75px;
+}
 
 @media (min-width: 1152px) {
    .skills  {
       display:none;
-      // visibility: hidden;
-      // display: block;
       background-color: #444444;
-      // padding-top: 75px;
-      // margin-top: 75px;
       h2 {
          text-align: center;
-         // margin-bottom: 50px;
          &::after {
             content: "";
-            // display: flex;
             display: block;
             height: 1.5px;
             width: 100px;
-            // position: absolute;
             background: #444444;
-            // top: 0%;
             margin: 0 auto;
-            // margin-top: 30px;
-            // right: 31%;
             }
       }
    } 
 }
-
-// @media (max-width: 1061) {
-   //    section.skills{
-      //       background-color: red;
-      
-      //    }
-      // }
-      
-      .skills {
-         background: #f9f9f9;
-      }
-      
-      .skills ul {
-         display: flex;
-         justify-content: space-between;
-         padding: 0;
-         // margin-top: 100px;
-         li {
-            list-style-type: none;
-            text-align: center;
-            i {
-               font-size: 40px;
-               padding: 10px;
-               color: #777777;
-            } p {
-               color: #777777;
-               
-               // text-align: center;
-            }
-         }
-      }
-      
-      ul.skillsBottom  {
-         // background-color: yellow;
-         justify-content: space-around;
-         padding: 30px 0 75px;
-         // padding-bottom: 75px;
-         
-      }
-      
-      // .devicon-html5-plain:hover {
-      //    // background-color: black;
-      //    color: #d45632;
-      // }
-      // .devicon-css3-plain:hover {
-      //    // background-color: black;
-      //    color: #3371b1;
-      // }
-      // .devicon-sass-original:hover {
-      //    // background-color: black;
-      //    color: #c26a98;
-      // }
-      // .devicon-javascript-plain:hover {
-      //    // background-color: black;
-      //    color: #f4df51;
-      // }
-      // .devicon-jquery-plain:hover {
-      //    color: #2d69a9;
-      //    // background-color: black;
-      // }
-      // .devicon-gulp-plain:hover {
-      //    // background-color: black;
-      //    color: #c4534d
-      // }
-      // .devicon-react-original:hover {
-      //    // background-color: black;
-      //    color: #80d8f7;
-      // }
-      // .devicon-visualstudio-plain:hover {
-      //    // background-color: black;
-      //    color: #307ac6;
-      // }
-      
+     
 @media (max-width: 480px) {
    .skills ul li i {
       font-size: 40px;

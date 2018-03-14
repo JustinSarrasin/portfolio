@@ -1,5 +1,4 @@
 .hero {
-   // display: flex;
    background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)),url('./../../assets/tobias-van-schneider-230170-unsplash.jpg');
    background-size: cover;
    background-attachment: fixed;
@@ -10,13 +9,11 @@
    a {
       text-decoration: none;
    }
-   // margin-bottom: 75px;
 }
 
 @media (max-width: 400px) {
    .hero {
       background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)),url('./../../assets/tobias-van-schneider-230170-unsplash-cropped.jpg');
-      // height: 80vh;
    }
    h1 {
       font-size: 40px;
@@ -25,9 +22,6 @@
    div.nameContainer {
       display: block;
       padding-top: 25%;
-      // justify-content: none;
-      // text-align: left;
-      // padding-bottom: -1000px;
    }
 
    .heroLinks {
@@ -45,7 +39,6 @@
             margin-top: 18px;
             transition: .5s;
             &:hover {
-               // color: white;
                transform: scale(1.1);
             }
             a {
@@ -61,26 +54,6 @@
          } 
    }
 }
-
-@media (max-width: 600px) {
-   .topHeader {
-      flex-direction: column;
-      padding: 5px 0 0;
-      // justify-content: center;
-      text-align: center;
-      a h2 {
-         display: none;
-      }
-   }
-
-   .topNavRight {
-      justify-content: center;
-      margin-left: -25px;
-      margin-top: -15px;
-      padding-bottom: 10px;
-   }
-}
-
 
 .topHeader {
    color: #b2b2b2;
@@ -112,9 +85,24 @@
          background-color: white;
          color: black;
          transform: scale(2);
-         // &:active {
-
-         // }
       }
+   }
+}
+
+@media (max-width: 600px) {
+   .topHeader {
+      flex-direction: column;
+      padding: 5px 0 0;
+      text-align: center;
+      a {
+         display: none;
+      }
+   }
+
+   .topNavRight {
+      justify-content: center;
+      margin-left: -25px;
+      margin-top: -15px;
+      padding-bottom: 10px;
    }
 }
