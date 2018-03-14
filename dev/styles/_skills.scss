@@ -67,44 +67,54 @@
          
       }
       
-      .devicon-html5-plain:hover {
-         // background-color: black;
-         color: #d45632;
-      }
-      .devicon-css3-plain:hover {
-         // background-color: black;
-         color: #3371b1;
-      }
-      .devicon-sass-original:hover {
-         // background-color: black;
-         color: #c26a98;
-      }
-      .devicon-javascript-plain:hover {
-         // background-color: black;
-         color: #f4df51;
-      }
-      .devicon-jquery-plain:hover {
-         color: #2d69a9;
-         // background-color: black;
-      }
-      .devicon-gulp-plain:hover {
-         // background-color: black;
-         color: #c4534d
-      }
-      .devicon-react-original:hover {
-         // background-color: black;
-         color: #80d8f7;
-      }
-      .devicon-visualstudio-plain:hover {
-         // background-color: black;
-         color: #307ac6;
-      }
+      // .devicon-html5-plain:hover {
+      //    // background-color: black;
+      //    color: #d45632;
+      // }
+      // .devicon-css3-plain:hover {
+      //    // background-color: black;
+      //    color: #3371b1;
+      // }
+      // .devicon-sass-original:hover {
+      //    // background-color: black;
+      //    color: #c26a98;
+      // }
+      // .devicon-javascript-plain:hover {
+      //    // background-color: black;
+      //    color: #f4df51;
+      // }
+      // .devicon-jquery-plain:hover {
+      //    color: #2d69a9;
+      //    // background-color: black;
+      // }
+      // .devicon-gulp-plain:hover {
+      //    // background-color: black;
+      //    color: #c4534d
+      // }
+      // .devicon-react-original:hover {
+      //    // background-color: black;
+      //    color: #80d8f7;
+      // }
+      // .devicon-visualstudio-plain:hover {
+      //    // background-color: black;
+      //    color: #307ac6;
+      // }
       
-      // ul.skillsTop {
-         //    margin-top: 20px;
-         // }
-               @media (max-width: 480px) {
-                  .skills i {
-                     font-size: 40px;
-                  }
-               }
+@media (max-width: 480px) {
+   .skills ul li i {
+      font-size: 40px;
+   }
+   .skills p {
+         font-size: 14px;
+   }
+}
+
+@media (max-width: 400px) {
+   .skills ul li i {
+      font-size: 30px;
+   }
+   .skills p {
+      font-size: 12px;
+   }
+   
+}

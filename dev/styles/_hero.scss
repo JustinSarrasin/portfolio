@@ -13,6 +13,28 @@
    // margin-bottom: 75px;
 }
 
+@media (max-width: 400px) {
+   .hero {
+      background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)),url('./../../assets/tobias-van-schneider-230170-unsplash-cropped.jpg');
+      // height: 80vh;
+   }
+   h1 {
+      font-size: 40px;
+   }
+
+   div.nameContainer {
+      display: block;
+      padding-top: 25%;
+      // justify-content: none;
+      // text-align: left;
+      // padding-bottom: -1000px;
+   }
+
+   .heroLinks {
+      margin-top: -100px;
+   }
+}
+
 .topHeader {
    display: flex;
    justify-content: space-between;
@@ -46,6 +68,9 @@
       padding: 5px 0 0;
       // justify-content: center;
       text-align: center;
+      a h2 {
+         display: none;
+      }
    }
 
    .topNavRight {
@@ -56,15 +81,6 @@
    }
 }
 
-// .topHeader  a:hover {
-//    color: white;
-//    transform: scale(1.1);
-// }
-
-// .topHeader  li:hover {
-//    color: white;
-//    transform: scale(1.1);
-// }
 
 .topHeader {
    color: #b2b2b2;

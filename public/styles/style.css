@@ -167,6 +167,17 @@ h5 {
   .hero a {
     text-decoration: none; }
 
+@media (max-width: 400px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)), url("./../../assets/tobias-van-schneider-230170-unsplash-cropped.jpg"); }
+  h1 {
+    font-size: 40px; }
+  div.nameContainer {
+    display: block;
+    padding-top: 25%; }
+  .heroLinks {
+    margin-top: -100px; } }
+
 .topHeader {
   display: flex;
   justify-content: space-between; }
@@ -192,6 +203,8 @@ h5 {
     flex-direction: column;
     padding: 5px 0 0;
     text-align: center; }
+    .topHeader a h2 {
+      display: none; }
   .topNavRight {
     justify-content: center;
     margin-left: -25px;
@@ -328,33 +341,17 @@ ul.skillsBottom {
   justify-content: space-around;
   padding: 30px 0 75px; }
 
-.devicon-html5-plain:hover {
-  color: #d45632; }
-
-.devicon-css3-plain:hover {
-  color: #3371b1; }
-
-.devicon-sass-original:hover {
-  color: #c26a98; }
-
-.devicon-javascript-plain:hover {
-  color: #f4df51; }
-
-.devicon-jquery-plain:hover {
-  color: #2d69a9; }
-
-.devicon-gulp-plain:hover {
-  color: #c4534d; }
-
-.devicon-react-original:hover {
-  color: #80d8f7; }
-
-.devicon-visualstudio-plain:hover {
-  color: #307ac6; }
-
 @media (max-width: 480px) {
-  .skills i {
-    font-size: 40px; } }
+  .skills ul li i {
+    font-size: 40px; }
+  .skills p {
+    font-size: 14px; } }
+
+@media (max-width: 400px) {
+  .skills ul li i {
+    font-size: 30px; }
+  .skills p {
+    font-size: 12px; } }
 
 .skills2 {
   padding-top: 15px;
@@ -391,30 +388,6 @@ ul.skillsBottom2 {
   justify-content: space-around;
   padding: 0px 0 0px; }
 
-.devicon-html5-plain:hover {
-  color: #d45632; }
-
-.devicon-css3-plain:hover {
-  color: #3371b1; }
-
-.devicon-sass-original:hover {
-  color: #c26a98; }
-
-.devicon-javascript-plain:hover {
-  color: #f4df51; }
-
-.devicon-jquery-plain:hover {
-  color: #2d69a9; }
-
-.devicon-gulp-plain:hover {
-  color: #c4534d; }
-
-.devicon-react-original:hover {
-  color: #80d8f7; }
-
-.devicon-visualstudio-plain:hover {
-  color: #307ac6; }
-
 .examples {
   padding: 75px 0 0; }
 
@@ -440,24 +413,28 @@ ul.skillsBottom2 {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 20px; }
+  margin-bottom: 35px; }
 
 .portfolio {
   width: 49%;
   margin-bottom: 45px; }
   .portfolio p {
-    color: #999999; }
+    color: #999999;
+    font-size: 18px; }
   .portfolio h5 {
     color: #999999; }
+
+.portfolioDesc {
+  padding-top: 20px; }
 
 @media (max-width: 700px) {
   .examples h5, .examples h3 {
     text-align: center; }
   .portfolio {
     width: 100%;
-    order: 2; }
-  .portfolioDesc2, .portfolioDesc {
     order: 1; }
+  .portfolioDesc2, .portfolioDesc {
+    order: 2; }
   div.viewLive {
     display: flex;
     margin-top: 0;
@@ -470,10 +447,12 @@ ul.skillsBottom2 {
   padding-left: 6px; }
 
 .viewLive {
-  margin-top: 75px; }
+  margin-top: 40px; }
   .viewLive a {
     color: #777777;
     padding: 4px 10px;
+    border-radius: 25px;
+    padding: 10px 25px;
     margin-top: 75px;
     text-decoration: none;
     border: 2px solid #eeeeee; }
@@ -513,7 +492,6 @@ ul.skillsBottom2 {
     margin-top: 30px; }
 
 .emailForm {
-  padding-bottom: 75px;
   display: flex;
   flex-direction: column; }
   .emailForm div {
@@ -522,12 +500,15 @@ ul.skillsBottom2 {
     .emailForm div input {
       width: 49.5%; }
 
+@media (max-width: 800px) {
+  .emailForm div input {
+    width: 49%; } }
+
 input,
 textarea {
   background-color: #2e2e2e;
   padding: 15px 0;
   border: none;
-  border-radius: 10px;
   margin-top: 10px; }
 
 textarea::placeholder,
@@ -543,10 +524,22 @@ textarea {
 .submitEmail {
   text-align: center;
   align-self: center;
-  padding: 5px 25px;
+  padding: 10px 25px;
   border-radius: 25px;
   color: #ffffff;
-  margin-top: 20px; }
+  margin: 20px 0; }
+
+.email {
+  text-align: center;
+  padding-bottom: 40px; }
+  .email a {
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 18px;
+    transform: scale(1.1); }
+    .email a:hover {
+      color: white;
+      transition: 1s; }
 
 footer {
   background-color: #232323;
@@ -593,9 +586,14 @@ footer {
 
 @media (max-width: 960px) {
   .footerContainer ul {
-    flex-direction: column;
     text-align: right;
-    flex-direction: flex-end; } }
+    flex-direction: flex-end; }
+    .footerContainer ul span {
+      display: none; } }
+
+@media (max-width: 375px) {
+  .footerContainer ul {
+    flex-direction: column; } }
 
 .wrapper {
   max-width: 1100px;

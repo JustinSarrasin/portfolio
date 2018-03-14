@@ -76,8 +76,20 @@ footer {
    }
    .footerContainer ul  {
       // display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       text-align: right;
       flex-direction: flex-end;
+      li {
+         // width: 33%;s
+      }
+      span {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 375px) {
+   .footerContainer ul {
+      flex-direction: column;
    }
 }
