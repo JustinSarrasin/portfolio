@@ -234,7 +234,7 @@ p {
     flex-direction: column;
     padding: 5px 0 0;
     text-align: center; }
-    .topHeader a {
+    .topHeader h2 {
       display: none; }
   .topNavRight {
     justify-content: center;
@@ -314,6 +314,7 @@ p {
     display: none; }
   .aboutMe {
     margin-top: -25px;
+    padding-left: 0;
     width: 100%;
     text-align: center; }
     .aboutMe h2::after {
@@ -473,6 +474,8 @@ ul.skillsBottom2 {
   .portfolio {
     width: 100%;
     order: 1; }
+  .viewLive {
+    text-align: center; }
   .portfolioDesc2, .portfolioDesc {
     order: 2; } }
 
