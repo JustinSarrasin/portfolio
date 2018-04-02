@@ -160,7 +160,7 @@ p {
   line-height: 1.3; }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)), url("./../../assets/tobias-van-schneider-230170-unsplash.jpg");
+  background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)), url("./../../assets/tobias-van-schneider-230170-unsplash-resized.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -172,7 +172,7 @@ p {
 
 @media (max-width: 400px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)), url("./../../assets/tobias-van-schneider-230170-unsplash-cropped.jpg"); }
+    background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0.529)), url("./../../assets/tobias-van-schneider-230170-unsplash.jpg"); }
   h1 {
     font-size: 40px; }
   div.nameContainer {
